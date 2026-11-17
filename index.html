@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#203d32">
+<title>Dulce Tentación | Pastelería & Repostería</title>
+<style>
+:root{--green:#203d32;--cream:#f6f0e7;--paper:#fffdfa;--terra:#b96e52;--ink:#263a32;--muted:#77736d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,sans-serif}
+.topline{background:var(--green);color:#f8f2e9;text-align:center;padding:10px;font-size:11px;letter-spacing:2px}
+header{position:sticky;top:0;z-index:5;background:#fffdfa;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(20px,6vw,75px);border-bottom:1px solid #e8dfd5}
+.brand{display:flex;align-items:center;gap:14px;color:var(--ink);text-decoration:none}.seal{width:54px;height:54px;border-radius:50%;background:var(--green);color:white;display:grid;place-items:center;font:34px Georgia,serif}.brandname{font:30px Georgia,serif}.sub{display:block;color:var(--terra);font-size:11px;letter-spacing:3px;margin-top:3px}
+nav{display:flex;gap:24px}nav a{color:var(--green);text-decoration:none;font-size:13px}.menu{display:none;background:none;border:0;font-size:28px;color:var(--green)}
+.hero{padding:100px 7vw 90px;max-width:1250px;margin:auto}.eyebrow{color:var(--terra);font-weight:bold;font-size:13px;letter-spacing:3px;text-transform:uppercase}
+h1{font:clamp(48px,7vw,82px)/1.05 Georgia,serif;font-weight:400;color:var(--green);max-width:850px;margin:35px 0 28px}h1 em{color:var(--terra)}.lead{font-size:20px;line-height:1.7;color:var(--muted);max-width:760px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin:32px 0}.btn{display:inline-block;text-decoration:none;border-radius:40px;padding:17px 27px;font-weight:bold}.primary{background:var(--green);color:white}.secondary{border:1px solid #cfc5ba;color:var(--green)}.quote{font:italic 22px Georgia,serif;color:#82786e;margin-top:42px}
+section{padding:85px 7vw}.inner{max-width:1120px;margin:auto}.center{text-align:center}.title{font:clamp(37px,5vw,58px)/1.12 Georgia,serif;font-weight:400;color:var(--green);margin:20px auto}.intro{font:19px/1.8 Arial,sans-serif;color:var(--muted);max-width:850px;margin:25px auto}
+.statement{background:#fffdfa;text-align:center}.catalog{background:#f3ede5}.catalog-head{margin-bottom:45px}.filters{display:flex;gap:12px;flex-wrap:wrap;margin:32px 0}.filter{background:white;border:1px solid #e4d9cf;border-radius:28px;padding:12px 23px;color:#68635e}.filter.active{background:var(--green);color:white}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.card{background:#fffdfa;border-radius:24px;padding:34px;min-height:245px;display:flex;flex-direction:column;justify-content:space-between}.card h3{font:32px Georgia,serif;font-weight:400;color:var(--green);margin:0 0 15px}.card p{font-size:17px;line-height:1.7;color:var(--muted);margin:0}.cardbottom{display:flex;justify-content:space-between;gap:12px;margin-top:30px;align-items:center}.card a{color:var(--terra);font-weight:bold;text-decoration:none}.tag{color:#777;font-size:13px}
+.story{background:#fffdfa}.story p{font-size:19px;line-height:1.85;color:var(--muted)}.signature{font:italic 30px Georgia,serif;color:var(--terra);margin-top:35px}
+.banner{background:var(--green);color:#f8f2e9;text-align:center;padding:100px 25px}.banner blockquote{font:clamp(32px,5vw,52px)/1.25 Georgia,serif;max-width:900px;margin:0 auto 30px}.banner small{letter-spacing:4px}
+.contact{background:var(--cream)}.contactbox{max-width:900px;margin:auto;background:#fffdfa;border-radius:40px;padding:55px}.contactbox h2{font:clamp(40px,6vw,64px)/1.1 Georgia,serif;font-weight:400;color:var(--green);margin:22px 0}.contactbox p{font-size:19px;line-height:1.8;color:var(--muted)}
+footer{background:var(--green);color:#eee6dc;text-align:center;padding:28px;font-size:13px;letter-spacing:1px}
+@media(max-width:700px){header{padding:14px 18px}.seal{width:48px;height:48px}.brandname{font-size:24px}.sub{font-size:9px;letter-spacing:2px}nav{display:none}.menu{display:block}.hero{padding:80px 25px}.lead{font-size:18px}section{padding:65px 22px}.cards{grid-template-columns:1fr}.card{padding:28px;min-height:220px}.title{font-size:39px}.intro{font-size:17px}.contactbox{padding:34px 25px}.story p{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="topline">PASTELERÍA &amp; REPOSTERÍA · HECHO CON DEDICACIÓN</div>
+<header>
+<a class="brand" href="#inicio"><span class="seal">H</span><span><span class="brandname">Dulce Tentación</span><span class="sub">PASTELERÍA &amp; REPOSTERÍA</span></span></a>
+<button class="menu" aria-label="Abrir menú" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav><a href="#inicio">Inicio</a><a href="#historia">Conócenos</a><a href="#vitrina">Productos</a><a href="#contacto">Contacto</a></nav>
+</header>
+<main>
+<section class="hero" id="inicio">
+<div class="eyebrow">Un mundo hecho de dulces momentos</div>
+<h1>Cada sabor tiene <em>una historia.</em></h1>
+<p class="lead">Pequeños detalles, grandes momentos y preparaciones pensadas para compartir. Bienvenidos a Dulce Tentación.</p>
+<div class="actions"><a class="btn primary" href="#vitrina">Descubrir productos →</a><a class="btn secondary" href="#historia">Conócenos</a></div>
+<p class="quote">“El ingrediente secreto siempre será el cariño.”</p>
+</section>
+<section class="statement"><div class="inner"><div class="eyebrow">Más que algo dulce</div><h2 class="title">Momentos especiales merecen sabores inolvidables.</h2><p class="intro">En nuestra vitrina imaginamos un lugar donde cada preparación acompaña una celebración, una conversación o ese pequeño gusto que alegra el día.</p></div></section>
+<section class="catalog" id="vitrina"><div class="inner">
+<div class="catalog-head"><div class="eyebrow">Nuestra vitrina</div><h2 class="title">Hecho para disfrutar</h2><p class="intro" style="margin-left:0">Conoce algunas de nuestras creaciones artesanales. Cada detalle está pensado para regalar, celebrar y compartir.</p></div>
+<div class="filters"><button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="tortas">Tortas</button><button class="filter" data-filter="dulces">Dulces individuales</button><button class="filter" data-filter="especiales">Especiales</button></div>
+<div class="cards">
+<article class="card" data-category="dulces"><div><h3>Colección navideña</h3><p>Creaciones de jengibre decoradas para llenar de dulzura la temporada.</p></div><div class="cardbottom"><a href="#contacto">Consultar</a><span class="tag">Edición especial</span></div></article>
+<article class="card" data-category="especiales"><div><h3>Casita de jengibre</h3><p>Una casita artesanal con detalles decorativos y dulces colores navideños.</p></div><div class="cardbottom"><a href="#contacto">Consultar</a><span class="tag">Edición especial</span></div></article>
+<article class="card" data-category="dulces"><div><h3>Canasta de galletas</h3><p>Galletas de jengibre decoradas con motivos navideños, listas para compartir.</p></div><div class="cardbottom"><a href="#contacto">Consultar</a><span class="tag">Galletas</span></div></article>
+<article class="card" data-category="especiales"><div><h3>Pack regalo navideño</h3><p>Una presentación especial para sorprender con un detalle hecho a mano.</p></div><div class="cardbottom"><a href="#contacto">Consultar</a><span class="tag">Regalos</span></div></article>
+</div></div></section>
+<section class="story" id="historia"><div class="inner"><div class="eyebrow">Nuestra esencia</div><h2 class="title" style="margin-left:0">Una historia que se comparte en cada bocado.</h2><p>Dulce Tentación nace de la idea de que la repostería puede transformar momentos cotidianos en recuerdos especiales.</p><p>Queremos que este espacio refleje dedicación, creatividad y el gusto por preparar algo rico para los demás. Aquí podremos contar cómo comenzó tu emprendimiento y qué lo hace único.</p><div class="signature">Con cariño, Dulce Tentación</div></div></section>
+<div class="banner"><blockquote>“Hay recuerdos que se quedan para siempre, y algunos comienzan con un sabor.”</blockquote><small>DULCE TENTACIÓN</small></div>
+<section class="contact" id="contacto"><div class="contactbox"><div class="eyebrow">Hablemos de algo dulce</div><h2>Agenda tu pedido</h2><p>¿Quieres encargar galletas o una casita navideña? Contáctanos por WhatsApp o visita nuestro Instagram. ¡Será un gusto atenderte!</p><div class="actions" style="justify-content:center"><a class="btn primary" href="https://wa.me/56961793887" target="_blank" rel="noopener">WhatsApp · +56 9 6179 3887</a><a class="btn secondary" href="https://www.instagram.com/mom_pab_dulcetentacion/" target="_blank" rel="noopener">Instagram · @mom_pab_dulcetentacion</a></div></div></section>
+</main>
+<footer>© <span id="year"></span> DULCE TENTACIÓN · PASTELERÍA &amp; REPOSTERÍA</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+document.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.card').forEach(c=>c.style.display=(b.dataset.filter==='todos'||c.dataset.category===b.dataset.filter)?'flex':'none')}));
+</script>
+</body></html>
